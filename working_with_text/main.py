@@ -17,3 +17,6 @@ print(vocab_size)
 
 vocab = {token: idx for idx, token in enumerate(all_words)}
 print(list(vocab.items())[:50])
+
+
+
