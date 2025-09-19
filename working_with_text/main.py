@@ -1,4 +1,4 @@
-from working_with_text.tokenization import load_text_file
+from working_with_text.tokenization import load_text_file, Tokenizer_v1
 
 from rich import print
 
@@ -20,3 +20,10 @@ print(list(vocab.items())[:50])
 
 
 
+tokenizer = Tokenizer_v1(vocab)
+text = """"It's the last he painted, you know," 
+ Mrs. Gisburn said with pardonable pride."""
+ids = tokenizer.encode(text)
+print(ids)
+
+print((tokenizer.decode(ids)))
